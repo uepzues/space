@@ -1,0 +1,108 @@
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crewSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 736px;
+  max-width: 1110;
+  width: 1110px;
+}
+
+.crewSection .title {
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.crewSection .title span {
+  font-weight: 600;
+  opacity: 0.3;
+}
+
+.contentGroup {
+  max-width: 1110px;
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  height: 90%;
+  width: 1110px;
+  gap: 30px;
+  position: relative;
+}
+
+.contentTxt {
+  height: 90%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+}
+
+.contentTxt .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.text .titleText {
+  font-family: Bellefair, serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.445);
+}
+
+.text .name {
+  font-family: Bellefair, serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 56px;
+  margin-bottom: 30px;
+  white-space: nowrap;
+}
+
+.text .desc {
+  font-family: Barlow, sans-serif;
+  font-size: 18px;
+  line-height: 180%;
+  height: 15ch;
+}
+
+.contentTxt .navi {
+  place-self: end start;
+  padding-bottom: 40px;
+}
+
+.contentTxt .navi button {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 1000px;
+  margin-inline: 10px;
+  z-index: 2;
+  cursor: pointer;
+  background-color: rgba(88, 85, 85, 0.5);
+
+}
+
+.navi button:hover{
+  background-color: rgb(255, 255, 255);
+}
+
+.crewSection .img {
+  margin-left: 30px;
+}
+
+.crewSection .img img {
+  height: 90%;
+}

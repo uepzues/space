@@ -1,0 +1,112 @@
+.techMain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.techSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 736px;
+  max-width: 1275px;
+  width: 1275px;
+}
+
+.techSection .techTitle {
+  place-self: flex-start;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.techSection .techTitle span {
+  font-weight: 600;
+  opacity: 0.3;
+}
+
+.techContent {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  place-items: center end;
+  max-width: 1275px;
+}
+
+.techContent .pageAndExplain {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  width: 100%;
+}
+
+.pageAndExplain .pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  height: 304px;
+}
+
+.pagination button {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 1000px;
+  margin-inline: 10px;
+  z-index: 2;
+  cursor: pointer;
+  background-color: rgba(88, 85, 85, 0);
+  color: white;
+  font-family: Bellefair, serif;
+  font-weight: 400;
+  font-size: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.459);
+}
+
+.pagination button:hover {
+  border-color: rgb(255, 255, 255);
+}
+
+.pageAndExplain .explanation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  height: 304px;
+  width: 100%;
+}
+
+.explanation .termAndItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-family: Bellefair, serif;
+  font-weight: 400;
+  width: 100%;
+  text-transform: uppercase;
+}
+.termAndItem h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.termAndItem h2 {
+  font-weight: 400;
+  font-size: 56px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.explanation .description {
+  height: 100%;
+  font-family: Barlow, sans-serif;
+  font-size: 18px;
+  line-height: 180%;
+}

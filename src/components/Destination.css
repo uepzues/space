@@ -1,0 +1,120 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1110px;
+  width: 1110px;
+  height: 792px;
+}
+
+.page-title {
+  align-self: flex-start;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.page-title span {
+  font-weight: 600;
+  opacity: 0.3;
+}
+
+.contentText {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  align-items: center;
+}
+
+.article {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.text {
+  height: 90%;
+  display: grid;
+  grid-template-rows: 0.2fr 0.5fr 1fr 0.2fr;
+}
+
+.tabs ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-family: 'Barlow Condensed', serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.tabs li {
+  position: relative;
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding-bottom: 5px; /* Add space for the underline */
+}
+
+.tabs li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* Start with no width */
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: width 0.4s ease-in-out; /* Smooth animation */
+}
+
+.tabs li:hover::after {
+  width: 100%; /* Expands from left to right */
+}
+
+.desName {
+  font-family: Bellefair, serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 100px;
+}
+
+.articleText {
+  font-family: Barlow, sans-serif;
+  font-size: 18px;
+  line-height: 180%;
+  width: 445px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.statTitle {
+  font-family: 'Barlow Condensed', serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.statData {
+  font-family: Bellefair, serif;
+  font-size: 32px;
+  text-transform: uppercase;
+}
