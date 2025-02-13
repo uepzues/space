@@ -1,15 +1,10 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import info from '../assets/data.json'
 import './Destination.css'
 export default function Destination() {
   const [destination, setDestination] = useState('Moon')
-  const [data, setData] = useState(info.destinations[0])
-
-  useEffect(() => {
-    const dest = info.destinations.find((item) => {
-      return item.name === destination
-    })
-    setData(dest)
+  const data = useMemo(() => {
+    return info.destinations.find((item) => item.name === destination)
   }, [destination])
 
   const handleClick = (body) => {
