@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import moon from '../assets/images/destination/image-moon.png'
 import info from '../assets/data.json'
 import './Destination.css'
 export default function Destination() {

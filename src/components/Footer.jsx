@@ -4,7 +4,7 @@ export default function Footer() {
   }
   return (
     <footer style={style}>
-      <div class='attribution'>
+      <div className='attribution'>
         Challenge by{' '}
         <a
           href='https://www.frontendmentor.io?ref=challenge'
